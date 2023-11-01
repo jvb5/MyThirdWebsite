@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 id="heading">Hello Leander!</h1>
+    <p>This is my third website, kindly assisted by ChatGPT 4 ;).</p>
+    <img src="image.jpg" alt="An example image">
+    <br>
+    <a href="https://www.example.com">Visit Example.com</a>
+    <button id="myButton">Click me</button>
+
+    <script>
+        // This function will change the text of the heading when called
+        function changeText() {
+            var heading = document.getElementById('heading');
+            heading.innerHTML = 'Text has been changed!';
+        }
+
+        // This code will call the changeText function when the button is clicked
+        var button = document.getElementById('myButton');
+        button.addEventListener('click', changeText);
+    </script>
+</body>
+</html>
